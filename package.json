@@ -1,6 +1,6 @@
 {
   "name": "vue-pixi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue.js components rendering 2D graphics reactively via pixi.js",
   "keywords": [
     "Vue",
