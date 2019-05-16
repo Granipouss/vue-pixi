@@ -24,7 +24,7 @@
     "lint": "vue-cli-service lint",
     "publish": "npx np"
   },
-  "main": "./dist/vue-pixi.common.js",
+  "main": "./src/index.js",
   "dependencies": {
     "pixi.js": "^4.8.1",
     "vue": "^2.5.17"
