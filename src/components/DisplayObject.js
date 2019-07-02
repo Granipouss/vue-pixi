@@ -32,7 +32,10 @@ export default {
     scaleY: Number,
     skewX: Number,
     skewY: Number,
-    visible: Boolean,
+    visible: {
+      type: Boolean,
+      default: () => true
+    },
     x: Number,
     y: Number
   },
@@ -62,7 +65,7 @@ export default {
         if (this.alpha) newInstance.alpha = this.alpha
         if (this.cursor) newInstance.cursor = this.cursor
         if (this.rotation) newInstance.rotation = this.rotation
-        if (this.visible) newInstance.visible = this.visible
+        newInstance.visible = !!this.visible
         if (this.skewX || this.skewY) newInstance.skew.set(this.skewX || 1, this.skewY || 1)
         if (this.scaleX || this.scaleY) newInstance.scale.set(this.scaleX || 1, this.scaleY || 1)
         if (this.pivotX || this.pivotY) newInstance.pivot.set(this.pivotX || 1, this.pivotY || 1)
